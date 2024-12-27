@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WishFund - Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #f58220;
+            --background-color: #f5f5f5;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            padding: 15px 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .logo-image {
+            height: 40px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            margin-right: 20px;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        .donate-btn {
+            background-color: var(--secondary-color);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .donate-btn:hover {
+            background-color: #d96b0f;
+        }
+
+        .blog-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            padding: 0 15px;
+        }
+
+        .blog-post {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .blog-post:hover {
+            transform: translateY(-10px);
+        }
+
+        .blog-post img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .blog-post-content {
+            padding: 20px;
+        }
+
+        .blog-post-content h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .blog-post-content .post-meta {
+            display: flex;
+            justify-content: space-between;
+            color: #777;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+
+        .blog-post-content p {
+            margin-bottom: 15px;
+        }
+
+        .read-more {
+            display: inline-block;
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-link {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        .social-link:hover {
+            color: var(--secondary-color);
+        }
+
+        @media (max-width: 768px) {
+            .blog-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="WishFund" class="logo-image">
+            </a>
+            <nav>
+                <a href="index.html" id="nav-home">Home</a>
+                <a href="#" id="nav-causes">Causes</a>
+                <a href="#" id="nav-get-involved">Get Involved</a>
+                <a href="blog.html" id="nav-blog">Blog</a>
+                <a href="contactus.html" id="nav-contact">Contact</a>
+            </nav>
+            <a href="#" class="donate-btn">Donate Now</a>
+        </div>
+    </header>
+
+    <div class="blog-container">
+        <article class="blog-post">
+            <img src="blog1.jpg" alt="Community Impact">
+            <div class="blog-post-content">
+                <div class="post-meta">
+                    <span>By Emily Johnson</span>
+                    <span>May 15, 2024</span>
+                </div>
+                <h3>Transforming Lives Through Education</h3>
+                <p>Discover how our education initiatives are breaking the cycle of poverty and giving children a chance to dream bigger.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </article>
+
+        <article class="blog-post">
+            <img src="blog2.jpg" alt="Sustainable Development">
+            <div class="blog-post-content">
+                <div class="post-meta">
+                    <span>By Michael Rodriguez</span>
+                    <span>April 22, 2024</span>
+                </div>
+                <h3>Sustainable Solutions for Community Growth</h3>
+                <p>Learn about our innovative approaches to sustainable development that empower communities from within.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </article>
+
+        <article class="blog-post">
+            <img src="blog3.jpg" alt="Healthcare Initiative">
+            <div class="blog-post-content">
+                <div class="post-meta">
+                    <span>By Sarah Kim</span>
+                    <span>March 10, 2024</span>
+                </div>
+                <h3>Healthcare Access: A Fundamental Right</h3>
+                <p>Explore our recent medical outreach programs that are bringing essential healthcare to underserved communities.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </article>
+
+        <article class="blog-post">
+            <img src="blog4.jpg" alt="Volunteer Stories">
+            <div class="blog-post-content">
+                <div class="post-meta">
+                    <span>By David Chen</span>
+                    <span>February 5, 2024</span>
+                </div>
+                <h3>Volunteer Diaries: Stories of Hope</h3>
+                <p>Hear incredible stories from our volunteers who are making a difference one community at a time.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 WishFund. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
